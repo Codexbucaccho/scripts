@@ -19,8 +19,8 @@ getgenv().Configs = {
         ["When x2 Exp Expired"] = false
     },
     ["Hop Player Near"] = true,
-    ["Skull Guitar"] = true, -- Farm SG Last
+    ["Skull Guitar"] = false, -- Farm SG Last
     ["Find Fruit"] = true, -- Will find 1m+ fruit to UNLOCK SWAN DOOR TO ACCESS THIRD SEA
-    ["Cursed Dual Katana"] = true --Farm CDK First
+    ["Cursed Dual Katana"] = false --Farm CDK First
 }
 repeat task.wait(6) pcall(function() loadstring(game:HttpGet("https://raw.githubusercontent.com/verudous/Xero-Hub/refs/heads/main/kaitun.lua"))()end) until getgenv().Check_Execute
