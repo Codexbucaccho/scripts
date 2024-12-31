@@ -5,22 +5,40 @@ Messages = "buy nick at sokiimarket ⊙ com"
 game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(Messages, "All")
 end
 end)
--- Buyer Perm key KAITUN
-script_key = "R2C2TNM7XKIJTGEM433O77X27TR4V7X26DF35KNXXI"
-getgenv().Configs = {
-    ["Team"] = "Pirates",
-    ["Gun Farm"] = false, -- Fast farm level, BUT FARMING MELEE VERY SLOW GODHUMAN
-    ["FPS Boost"] = {
-        ["Enable"] = false,
-        ["FPS Cap"] = 15, --FPS u want 
-    },
-    ["Farm Boss Drops"] = {
-        ["Enable"] = false,
-        ["When x2 Exp Expired"] = false
-    },
-    ["Hop Player Near"] = false,
-    ["Skull Guitar"] = false, -- Farm SG Last
-    ["Find Fruit"] = true, -- Will find 1m+ fruit to UNLOCK SWAN DOOR TO ACCESS THIRD SEA
-    ["Cursed Dual Katana"] = false --Farm CDK First
-}
-repeat task.wait(6) pcall(function() loadstring(game:HttpGet("https://raw.githubusercontent.com/verudous/Xero-Hub/refs/heads/main/kaitun.lua"))()end) until getgenv().Check_Execute
+script_key = "xInwYKLsEIQzXzEOBvCsVhRKLtaCpkkX"
+getgenv().SetFpsCap = false
+getgenv().FpsCap = 15
+getgenv().OneClickUi = true -- Only Open Necessacry Ui For One Click
+getgenv().FpsBoost1 = true
+    getgenv().WhiteScreen = true
+    getgenv().UiCheckItems = false
+    getgenv().OneClickSetting = {
+        Enable=true,
+        UnlimitGetQuest=true,
+        TripleQuest=true,
+        AutoAddStats=true,
+        RedeemCode=true,
+        Sea2KeyHop=false,
+        FruitEat = { --Priority, Name, 
+            [1] = {"Magma-Magma"},
+            [2] = {"Magma-Magma"}
+        },
+        EatFruitFromStorage = true,
+        SnipeFruit = true,
+        SnipeFruitMirage = true,
+        HopIfFoundNearExploiter = false,
+        HopHakiColor =false,
+        HopTushita = false,
+        HopValkyriehelm = false,
+        HopMirrorFractal=false,
+        FarmPole = false, -- Turn off If Want Focus Level
+        FarmItems = false, --Turn off If Want Focus Level And CDK, THis Only get After You Get God Human
+        DisableSoulGuitar = true,
+        DisableCDK = true,
+    }
+    getgenv().OneClickFarms = {
+        ["Shark Anchor"] = false,
+    }
+getgenv().Team = "Pirates"
+getgenv().AutoLoad = false --Will Load Script On Server Hop
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3b2169cf53bc6104dabe8e19562e5cc2.lua"))()
