@@ -6,7 +6,7 @@ game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageReque
 end
 end)
 -- Buyer Perm key KAITUN
-script_key = "R2C2TNM7XKIJTGEM433O77X27TR4V7X26DF35KNXXI"
+script_key = "Q62ZJEFEWGZ25PUZ433O77X2ZLR7L5XF6PF35KNXXI"
 getgenv().Configs = {
     ["Team"] = "Pirates",
     ["Gun Farm"] = false, -- Fast farm level, BUT FARMING MELEE VERY SLOW GODHUMAN
