@@ -11,6 +11,17 @@ local checkDelay = 10
 local lastPosition = nil
 local timeStuck = 0
 
+-- Tự động gửi tin nhắn chat
+spawn(function()
+    while true do 
+        task.wait(300)
+        local Messages = "buy nick at sokiimarket ⊙ com"
+        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(Messages, "All")
+    end
+end)
+
+return -- End.
+
 local function hopToServer()
     local success = pcall(function()
         local url = "https://games.roblox.com/v1/games/" .. game.PlaceId .. "/servers/Public?sortOrder=Asc&limit=100"
@@ -76,12 +87,3 @@ while true do
     checkStuck()
     task.wait(checkDelay)
 end
-
--- Tự động gửi tin nhắn chat
-spawn(function()
-    while true do 
-        task.wait(300)
-        local Messages = "buy nick at sokiimarket ⊙ com"
-        game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(Messages, "All")
-    end
-end)
