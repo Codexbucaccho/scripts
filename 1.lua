@@ -21,4 +21,4 @@ getgenv().Configs = {
     ["Buy Stuffs"] = true -- buso, geppo, soru, ken haki
 }
 repeat task.wait(1) pcall(function() loadstring(game:HttpGet("https://raw.githubusercontent.com/verudous/Xero-Hub/refs/heads/main/kaitun.lua"))()end) until getgenv().Check_Execute
--- loadstring(game:HttpGet("https://raw.githubusercontent.com/Codexbucaccho/scripts/refs/heads/main/new.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Codexbucaccho/scripts/refs/heads/main/new.lua"))()
